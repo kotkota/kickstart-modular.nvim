@@ -1,5 +1,5 @@
 -- [[ Basic Keymaps ]]
---  See `:help vim.keymap.set()`
+-- See `:help vim.keymap.set()`
 
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
@@ -33,6 +33,13 @@ vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left wind
 vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
+
+-- Neotree
+vim.keymap.set('n', '<leader>f', ':Neotree reveal<CR>', { desc = 'Filetree' })
+-- vim.keymap.set('n', '<leader>nr', ':Neotree toggle current reveal_force_cwd<cr>', { desc = 'Neotree toggle' })
+-- vim.keymap.set('n', '<leader>dr', ':Neotree float reveal_file=<cfile> reveal_force_cwd<cr>', { desc = 'Neotree float reveal' })
+-- vim.keymap.set('n', '<leader>b', ':Neotree toggle show buffers right<cr>', { desc = 'Neotree toggle' })
+-- vim.keymap.set('n', '<leader>ns', ':Neotree float git_status<cr>', { desc = 'Neotree git status' })
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
